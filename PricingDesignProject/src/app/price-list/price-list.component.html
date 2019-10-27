@@ -1,1 +1,15 @@
-<p>price-list works!</p>
+<div class="content-box">
+  <div class="header-line">
+  </div>
+  <div class="header-text">
+    <p>Pricing</p>
+  </div>
+  <div class="price-list">
+    <ng-container *ngFor="let detail of priceList">
+      <div class="price-list-detail">
+          <app-price-list-detail [priceListDetail]="detail"></app-price-list-detail>
+      </div>
+    </ng-container>
+  </div>
+</div>
+

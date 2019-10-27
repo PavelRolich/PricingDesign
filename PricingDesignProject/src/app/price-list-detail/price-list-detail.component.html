@@ -1,1 +1,18 @@
-<p>price-list-detail works!</p>
+<mat-card class="card">
+  <div class="header-box">
+    <mat-card-title class="header-title">{{ priceListDetail.header.headerText }}</mat-card-title>
+    <mat-card-subtitle class="header-subtitle">{{ priceListDetail.header.headerAddText }}</mat-card-subtitle>
+  </div>
+  <div class="price-box">
+    <mat-card-title class="price-title">{{ priceListDetail.price.priceCount }}</mat-card-title>
+    <mat-card-subtitle class="price-subtitle">{{ priceListDetail.price.priceTime }}</mat-card-subtitle>
+  </div>
+  <div class="discriprion-box">
+    <ng-container *ngFor="let desc of priceListDetail.description">
+        <p class="description-text">{{ desc }}</p>
+    </ng-container>
+  </div>
+  <div class="button-box">
+    <button class="button" mat-button>Start Free Trial</button>
+  </div>
+</mat-card>

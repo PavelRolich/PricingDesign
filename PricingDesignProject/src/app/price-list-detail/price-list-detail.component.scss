@@ -1,0 +1,61 @@
+$color: #3f51b5;
+
+.card {
+  max-width: 250px;
+  height: 350px;
+
+  .header-box {
+    height: 80px;
+
+    .header-subtitle {
+      color: green;
+    }
+  }
+
+  .price-box {
+    height: 80px;
+
+    .price-title {
+      color: $color;
+      font-size: 42px;
+    }
+  }
+
+  .discriprion-box {
+    height: 140px;
+  }
+
+  .button-box {
+    height: 50px;
+
+    .button {
+      background-color: $color;
+      color: #ffffff;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 255, .2);
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &:focus {
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &:before {
+    background-color: $color;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+  }
+}

@@ -1,0 +1,33 @@
+.content-box {
+  width: 100%;
+}
+.content-box .header-line {
+  background-color: #3f51b5;
+  width: 100%;
+  height: 80px;
+}
+.content-box .header-text {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+.content-box .header-text p {
+  font-size: 36px;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 3px solid #3f51b5;
+}
+.content-box .price-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.content-box .price-list .price-list-detail {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
